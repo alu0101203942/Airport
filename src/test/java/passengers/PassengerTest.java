@@ -1,36 +1,31 @@
 package passengers;
 
+import es.ull.flights.Flight;
+import es.ull.passengers.Passenger;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class PassengerTest {
+    private Flight vuelo = new Flight( "NT3333" ,72);
+
+    private Passenger pasajero1 = new Passenger("111111O", "Lucas", "ES");
+    private Passenger pasajero2 = new Passenger("222222Y", "Erik", "GB");
+    private Passenger pasajero3 = new Passenger("333333R", "Lidia", "US");
 
     @Test
-    void getIdentifier() {
+    void testgetIdentifier() {
+        assertEquals(pasajero1.getIdentifier(), "111111O");
     }
 
     @Test
-    void getName() {
+    void testgetName() {
+        assertEquals(pasajero2.getName(), "Erik");
     }
 
     @Test
-    void getCountryCode() {
+    void testgetCountryCode() {
+        assertEquals(pasajero3.getCountryCode(), "US");
     }
 
-    @Test
-    void getFlight() {
-    }
-
-    @Test
-    void joinFlight() {
-    }
-
-    @Test
-    void setFlight() {
-    }
-
-    @Test
-    void testToString() {
-    }
 }
