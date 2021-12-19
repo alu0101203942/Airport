@@ -12,6 +12,7 @@ class PassengerTest {
     private Passenger pasajero1 = new Passenger("111111O", "Lucas", "ES");
     private Passenger pasajero2 = new Passenger("222222Y", "Erik", "GB");
     private Passenger pasajero3 = new Passenger("333333R", "Lidia", "US");
+    private Passenger pasajero4 = new Passenger("444444X", "Lidia", "US");
 
     @Test
     void testgetIdentifier() {
